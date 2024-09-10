@@ -45,13 +45,14 @@ while(playAgain){
     Console.WriteLine("Now, what time did you wake up today?");
     Console.WriteLine("Please only use military time format.");
     Console.WriteLine("Example: 0100 = 1:00am, 2300 = 11:00pm");
-    Console.WriteLine(breakLine);
+    // Console.WriteLine(breakLine);
     bool succcess = Int32.TryParse(Console.ReadLine(), out userNum);    
     while(true){
         if(!succcess){
             Console.Clear();
             Console.WriteLine("That is not a number or the proper format.");
-            Console.WriteLine("Please only use 1200 or 0930 format.");
+            Console.WriteLine("Please only use military time format.");
+            Console.WriteLine("Example: 0100 = 1:00am, 2300 = 11:00pm");
             succcess = int.TryParse(Console.ReadLine(), out userNum);
         }else{
             Console.Clear();
@@ -61,7 +62,7 @@ while(playAgain){
 
     }
    
-    Console.Clear();
+
     Console.WriteLine(breakLine);
     Console.WriteLine($"Nice to meet you {userName}. {userNum} seems a bit early to me.");
     Console.WriteLine(breakLine);
