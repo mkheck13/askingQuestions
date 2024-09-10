@@ -12,3 +12,4 @@ C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 1\askingQuestions\ob
 C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 1\askingQuestions\obj\Debug\net8.0\askingQuestions.pdb
 C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 1\askingQuestions\obj\Debug\net8.0\askingQuestions.genruntimeconfig.cache
 C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 1\askingQuestions\obj\Debug\net8.0\ref\askingQuestions.dll
+C:\Users\mkhec\Documents\CodeStack 24-25\Combine 24-25\week 1\askingQuestions\obj\Debug\net8.0\askingQuestions.sourcelink.json
