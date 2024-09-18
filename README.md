@@ -11,3 +11,6 @@
 **Name**: Chris Wells-Hott
 
 **Comments**:Complex code for me but works very good 
+
+**Update Date**: 9/18/24
+**Update**: Updated the validation for the time to only take in 24 time format. Adjusted the play again loop to only take in yes/y or no/n to play again or exit, anything else will loop back until the correct format is entered.

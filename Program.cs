@@ -50,26 +50,8 @@ while (playAgain)
             // break;
         }
     }
-    // Console.WriteLine(breakLine);
-    // Console.WriteLine("Now, what time did you wake up today?");
-    // Console.WriteLine("Please only use 24 hour format.");
-    // Console.WriteLine("Example: 01:30 = 1:30am, 23:00 = 11:00pm");
-    // Console.WriteLine(breakLine);
-    // bool succcess = Int32.TryParse(Console.ReadLine(), out userNum);    
-    // while(true){
-    //     if(!succcess){
-    //         Console.Clear();
-    //         Console.WriteLine("That is not a number or the proper format.");
-    //         Console.WriteLine("Please only use military time format.");
-    //         Console.WriteLine("Example: 0100 = 1:00am, 2300 = 11:00pm");
-    //         succcess = int.TryParse(Console.ReadLine(), out userNum);
-    //     }else{
-    //         Console.Clear();
-    //         Console.WriteLine($"So you woke up at {userNum}.");
-    //         break;
-    //     }
 
-    // }
+    // updated time validation
     while (true)
     {
         Console.WriteLine("Enter the time you woke up (in 24-hour format, e.g., 07:30):");
@@ -95,20 +77,34 @@ while (playAgain)
     Console.WriteLine(breakLine);
 
     Console.WriteLine("Would you like to play again?");
-    Console.WriteLine("Type 'yes' to play again or hit any key to exit");
-    string? userInput = Console.ReadLine();
-    userInput = userInput?.ToLower();
-
-    if (userInput == "yes")
-    {
-        Console.WriteLine("Here we go again!!!");
+    Console.WriteLine("Type 'yes' to play again or 'no' to exit");
+    // string? userInput = Console.ReadLine();
+    // userInput = userInput?.ToLower();
+    // if (userInput == "yes")
+    // {
+    //     Console.WriteLine("Here we go again!!!");
+    // }
+    // else
+    // {
+    //     playAgain = false;
+    //     Console.WriteLine("Til next time.");
+    // }
+    bool yesNo = true;
+    
+    while(yesNo == true){
+        string userPlay = Console.ReadLine()!.Trim().ToLower();
+        if(userPlay == "yes" || userPlay == "y"){
+            Console.WriteLine("Let's go again!");
+            yesNo = false;
+        }else if(userPlay == "no" || userPlay == "n"){
+            Console.WriteLine("See you next time.");
+            yesNo = false;
+            playAgain = false;
+        }else{
+            Console.Clear();
+            Console.WriteLine("That was not a yes or no. Try again.");
+        }
     }
-    else
-    {
-        playAgain = false;
-        Console.WriteLine("Til next time.");
-    }
-
 
 
 }
