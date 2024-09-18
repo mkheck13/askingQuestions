@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mkhec\\Documents\\CodeStack 24-25\\Combine 24-25\\week 1\\askingQuestions\\askingQuestions.csproj",
+      "projectUniqueName": "C:\\Users\\mkhec\\Documents\\CodeStack 24-25\\Combine 24-25\\week 2\\askingQuestions\\askingQuestions.csproj",
       "projectName": "askingQuestions",
-      "projectPath": "C:\\Users\\mkhec\\Documents\\CodeStack 24-25\\Combine 24-25\\week 1\\askingQuestions\\askingQuestions.csproj",
+      "projectPath": "C:\\Users\\mkhec\\Documents\\CodeStack 24-25\\Combine 24-25\\week 2\\askingQuestions\\askingQuestions.csproj",
       "packagesPath": "C:\\Users\\mkhec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mkhec\\Documents\\CodeStack 24-25\\Combine 24-25\\week 1\\askingQuestions\\obj\\",
+      "outputPath": "C:\\Users\\mkhec\\Documents\\CodeStack 24-25\\Combine 24-25\\week 2\\askingQuestions\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mkhec\\AppData\\Roaming\\NuGet\\NuGet.Config"
