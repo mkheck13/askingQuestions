@@ -57,7 +57,7 @@ while (playAgain)
         Console.WriteLine("Enter the time you woke up (in 24-hour format, e.g., 07:30):");
         string userNum = Console.ReadLine()!;
 
-        if (DateTime.TryParseExact(userNum, "HH:mm", null, System.Globalization.DateTimeStyles.None, out  wakeUpTime))
+        if (DateTime.TryParseExact(userNum, "HH:mm", null, System.Globalization.DateTimeStyles.None, out wakeUpTime))
         {
             Console.Clear();
             // Console.WriteLine($"You woke up at: {wakeUpTime.ToString("h:mm tt")}");
@@ -78,29 +78,25 @@ while (playAgain)
 
     Console.WriteLine("Would you like to play again?");
     Console.WriteLine("Type 'yes' to play again or 'no' to exit");
-    // string? userInput = Console.ReadLine();
-    // userInput = userInput?.ToLower();
-    // if (userInput == "yes")
-    // {
-    //     Console.WriteLine("Here we go again!!!");
-    // }
-    // else
-    // {
-    //     playAgain = false;
-    //     Console.WriteLine("Til next time.");
-    // }
+
     bool yesNo = true;
-    
-    while(yesNo == true){
+
+    while (yesNo == true)
+    {
         string userPlay = Console.ReadLine()!.Trim().ToLower();
-        if(userPlay == "yes" || userPlay == "y"){
+        if (userPlay == "yes" || userPlay == "y")
+        {
             Console.WriteLine("Let's go again!");
             yesNo = false;
-        }else if(userPlay == "no" || userPlay == "n"){
+        }
+        else if (userPlay == "no" || userPlay == "n")
+        {
             Console.WriteLine("See you next time.");
             yesNo = false;
             playAgain = false;
-        }else{
+        }
+        else
+        {
             Console.Clear();
             Console.WriteLine("That was not a yes or no. Try again.");
         }
